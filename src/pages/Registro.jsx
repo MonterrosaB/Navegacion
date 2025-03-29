@@ -1,6 +1,6 @@
 
 import RegistroEstudiantes from '../components/Estudiantes'
-import './App.css'
+import '../App.css'
 
 function App() {
 
