@@ -21,16 +21,17 @@ function TodoList() {
       <h1>Lista de Tareas</h1>
       <div className="input-tarea">
         <input
+        className="inputTodo"
           type="text"
           value={tarea}
           onChange={(e) => setTarea(e.target.value)}
           placeholder="Escribe una tarea..."
         />
-        <button onClick={agregarTarea}>Agregar</button>
+        <button onClick={agregarTarea} className="btnAgregar">Agregar</button>
       </div>
-      <ul>
+      <ul className="ulT">
         {tareas.map((t, index) => (
-          <li key={index}>
+          <li key={index} className="liT">
             {t} <button onClick={() => eliminarTarea(index)}>Eliminar</button>
           </li>
         ))}

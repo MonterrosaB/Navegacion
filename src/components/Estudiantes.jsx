@@ -47,9 +47,9 @@ function RegistroEstudiantes() {
         />
         <button onClick={agregarEstudiante}>Agregar Estudiante</button>
       </div>
-      <ul>
+      <ul className="ulR">
         {estudiantes.map((estudiante, index) => (
-          <li key={index}>
+          <li className="liR" key={index}>
             {estudiante.nombre} - {estudiante.edad} años - Carnet: {estudiante.carnet}
             <button onClick={() => eliminarEstudiante(index)}>Eliminar</button>
           </li>

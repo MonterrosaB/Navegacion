@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Router>
-      |    <Nav />
+       <Nav />
         <Routes>
           <Route path='/Calculadora' element={<Calculadora />}/>
           <Route path='/Todo' element={<Todo />}/>

@@ -21,18 +21,19 @@ function Calculadora() {
 
   return (
     <div className="calculadora">
-      <input type="text" value={resultado} readOnly />
+      <input className="inputCalculadora" type="text" value={resultado} readOnly />
       <div className="botones">
         {["7", "8", "9", "/", "4", "5", "6", "*", "1", "2", "3", "-", "0", ".", "="].map((btn) => (
           <button
+          className="btnCalcular"
             key={btn}
             onClick={btn === "=" ? calcular : () => agregarValor(btn)}
           >
             {btn}
           </button>
         ))}
-        <button onClick={() => agregarValor("+")}>+</button>
-        <button onClick={limpiar}>C</button>
+        <button onClick={() => agregarValor("+")} className="btnCalcular">+</button>
+        <button onClick={limpiar} className="btnCalcular">C</button>
       </div>
     </div>
   );
